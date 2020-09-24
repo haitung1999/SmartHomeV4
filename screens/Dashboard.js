@@ -24,7 +24,7 @@ class Dashboard extends Component {
       <Block style={styles.dashboard}>
         <Block column style={{ marginVertical: theme.sizes.base * 2, }}>
           <Text welcome>Hello</Text>
-          <Text name>John Doe</Text>
+          <Text name>Tùng Nguyễn</Text>
         </Block>
 
         <Block row style={{ paddingVertical: 10 }}>
@@ -32,7 +32,7 @@ class Dashboard extends Component {
             <Text h1>34</Text>
             <Text h1 size={34} height={80} weight='600' spacing={0.1}>°C</Text>
           </Block>
-          <Block flex column>
+          <Block colum>
             <Text caption>Humidity</Text>
             <LineChart
               yMax={100}

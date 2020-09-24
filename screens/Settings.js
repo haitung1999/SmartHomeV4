@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { StyleSheet, TouchableWithoutFeedback, Slider } from 'react-native'
+import { StyleSheet, TouchableWithoutFeedback } from 'react-native';
+import Slider from '@react-native-community/slider';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
 import * as theme from '../theme';
@@ -41,7 +42,7 @@ class Settings extends Component {
     const { navigation, settings } = this.props;
     const name = navigation.getParam('name');
     const Icon = settings[name].icon;
-    
+
     return (
       <Block flex={1} style={styles.settings}>
         <Block flex={0.5} row>
@@ -53,11 +54,11 @@ class Settings extends Component {
             </Block>
             <Text caption>Temperature</Text>
           </Block>
-          <Block flex center>
+          <Block center>
             <PanSlider />
           </Block>
         </Block>
-        <Block flex style={{ paddingTop: theme.sizes.base * 2 }}>
+        <Block style={{ paddingTop: theme.sizes.base * 2 }}>
           <Block column style={{ marginVertical: theme.sizes.base * 2 }}>
             <Block row space="between">
               <Text welcome color="black">Direction</Text>
@@ -73,7 +74,7 @@ class Settings extends Component {
               onValueChange={value => this.setState({ direction: parseInt(value, 10) })}
             />
           </Block>
-          
+
           <Block column style={{ marginVertical: theme.sizes.base * 2 }}>
             <Block row space="between">
               <Text welcome color="black">Speed</Text>

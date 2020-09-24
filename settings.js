@@ -7,7 +7,7 @@ import * as theme from './theme';
 export default {
   'light': {
     name: 'Light',
-    icon: ({size, color, ...props}) => (
+    icon: ({ size, color, ...props }) => (
       <MaterialCommunityIcons
         size={size || theme.sizes.font}
         color={color || theme.colors.accent}
@@ -18,7 +18,7 @@ export default {
   },
   'ac': {
     name: 'AC',
-    icon: ({size, color, ...props}) => (
+    icon: ({ size, color, ...props }) => (
       <MaterialCommunityIcons
         size={size || theme.sizes.font}
         color={color || theme.colors.accent}
@@ -29,7 +29,7 @@ export default {
   },
   'temperature': {
     name: 'Temperature',
-    icon: ({size, color, ...props}) => (
+    icon: ({ size, color, ...props }) => (
       <MaterialCommunityIcons
         size={size || theme.sizes.font}
         color={color || theme.colors.accent}
@@ -40,7 +40,7 @@ export default {
   },
   'fan': {
     name: 'Fan',
-    icon: ({size, color, ...props}) => (
+    icon: ({ size, color, ...props }) => (
       <MaterialCommunityIcons
         size={size || theme.sizes.font}
         color={color || theme.colors.accent}
@@ -51,7 +51,7 @@ export default {
   },
   'wi-fi': {
     name: 'Wi-Fi',
-    icon: ({size, color, ...props}) => (
+    icon: ({ size, color, ...props }) => (
       <FontAwesome
         size={size || theme.sizes.font}
         color={color || theme.colors.accent}
@@ -62,7 +62,7 @@ export default {
   },
   'electricity': {
     name: 'Electricity',
-    icon: ({size, color, ...props}) => (
+    icon: ({ size, color, ...props }) => (
       <MaterialIcons
         size={size || theme.sizes.font}
         color={color || theme.colors.accent}
